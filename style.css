@@ -1,0 +1,1338 @@
+body {
+    margin: 0;
+    padding: 0
+}
+
+#birthday {
+    width: 350px;
+    height: 100vh;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden
+}
+
+#section1 {
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+h1 {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    top: 170px;
+    left: -90px;
+    font-size: 40px;
+}
+
+#happy {
+    animation: happy 1s linear 0.1s 1, happy1 1s linear 1s infinite;
+    animation-fill-mode: forwards;
+    transform: scale(0)
+}
+
+@keyframes happy {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes happy1 {
+    0%,
+    100% {
+        transform: rotateZ(-20deg) scale(1);
+    }
+    50% {
+        transform: rotateZ(20deg) scale(1);
+    }
+}
+
+#birth {
+    animation: happy 1s linear 0.1s 1, happy1 1s linear 1s infinite;
+    animation-fill-mode: forwards;
+    transform: scale(0)
+}
+
+#you {
+    animation: happy 1s linear 0.1s 1, happy1 1s linear 1s infinite;
+    animation-fill-mode: forwards;
+    transform: scale(0)
+}
+
+#cartoons {
+    width: 150px;
+    height: 100vh;
+    background: radial-gradient(white, #FFEA96);
+    position: absolute;
+    left: 200px
+}
+
+#backsection1 {
+    width: 350px;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    animation: back 5s linear 1s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes back {
+    0% {
+        left: 0px
+    }
+    20% {
+        left: -10px
+    }
+    30% {
+        left: -50px
+    }
+    60% {
+        left: -70px
+    }
+    80% {
+        left: -100px
+    }
+    100% {
+        left: -1200px
+    }
+}
+
+#cartoon1 {
+    width: 70px;
+    height: 70px;
+    background-image: url(https://image.flaticon.com/icons/svg/187/187130.svg);
+    position: absolute;
+    top: 200px;
+    left: -30px;
+    transform: rotateZ(20deg);
+    animation: cartoon1 1s linear 0.1s infinite;
+}
+
+@keyframes cartoon1 {
+    0%,
+    100% {
+        transform: rotateZ(30deg)
+    }
+    50% {
+        transform: rotateZ(-10deg);
+        left: -20px;
+        top: 180px;
+    }
+}
+
+#hat1 {
+    background-image: url(https://image.flaticon.com/icons/svg/2155/2155390.svg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    position: absolute;
+    top: -65px;
+    transform: rotateZ(13deg);
+    left: 10px
+}
+
+#cartoon2 {
+    width: 70px;
+    height: 70px;
+    background-image: url(https://image.flaticon.com/icons/svg/187/187134.svg);
+    position: absolute;
+    top: 240px;
+    left: -30px;
+    transform: rotateZ(20deg);
+    animation: cartoon2 2s linear 0.11s infinite;
+}
+
+@keyframes cartoon2 {
+    0%,
+    100% {
+        transform: rotateZ(60deg);
+        
+    }
+    
+    50% {
+        transform: rotateZ(50deg);
+        left: -20px;
+        top: 240px;
+    
+    }
+}
+
+#hat2 {
+    background-image: url(https://image.flaticon.com/icons/svg/194/194408.svg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    position: absolute;
+    top: -65px;
+    transform: rotateZ(13deg);
+    left: 10px
+}
+
+#top1 {
+    width: 3500px;
+    height: 100px;
+    background-image: url(https://image.flaticon.com/icons/svg/194/194369.svg);
+    position: absolute;
+    z-index: 1;
+    animation: top1 15s linear 0.1s infinite;
+    background-repeat: repeat-x;
+    left: -50px
+}
+
+@keyframes top1 {
+    0% {
+        left: -30px;
+        top: 20px
+    }
+    100% {
+        left: 30px;
+        top: 25px
+    }
+}
+
+#cartoon3 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 300px;
+    left: -30px;
+    transform: rotateZ(20deg);
+    background-image: url(https://image.flaticon.com/icons/svg/187/187147.svg);
+    animation: cartoon3 4s linear 0.11s infinite;
+}
+
+@keyframes cartoon3 {
+    0%,
+    100% {
+        transform: rotateZ(60deg);
+        display: none
+    }
+    50% {
+        transform: rotateZ(50deg);
+        left: -20px;
+        top: 300px;
+    
+    }
+}
+
+#hat3 {
+    background-image: url(https://image.flaticon.com/icons/svg/415/415599.svg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    position: absolute;
+    top: -65px;
+    transform: rotateZ(13deg);
+    left: 10px
+}
+
+#button1 {
+    width: 100px;
+    height: 50px;
+    border-radius: 0;
+    border-style: none;
+    background: crimson;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 420px;
+    left: 140px;
+    animation: bounce-in-top 1.1s both;
+    animation-delay: 8s;
+}
+
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in;
+        opacity: 0
+    }
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1
+    }
+    55% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in
+    }
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+    81% {
+        transform: translateY(-28px);
+        animation-timing-function: ease-in
+    }
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in
+    }
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+}
+
+
+/* Section 2  ****************************** */
+
+#section2 {
+    background: #24383F;
+    width: 100%;
+    height: 100vh
+}
+
+#table {
+    background-image: url(https://image.flaticon.com/icons/svg/2059/2059756.svg);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-size: cover;
+    top: 252px;
+    left: 30px;
+    z-index: 1
+}
+
+#cake {
+    position: absolute;
+    top: -700px;
+    z-index: 11;
+}
+
+@keyframes cake {
+    0% {
+        transform: rotateZ(30deg);
+        left: -50px
+    }
+    20% {
+        transform: rotateZ(0deg);
+        left: 0px;
+        top: -600px
+    }
+    50% {
+        transform: rotateZ(-20deg);
+        left: 0px;
+        top: -500px
+    }
+    53% {
+        transform: rotateZ(-20deg);
+        left: -20px;
+        top: -400px
+    }
+    57% {
+        transform: rotateZ(-20deg);
+        left: 20px;
+        top: -300px
+    }
+    60% {
+        transform: rotateZ(10deg);
+        left: -20px;
+        top: -200px
+    }
+    70% {
+        transform: rotateZ(0deg);
+        left: 20px;
+        top: -100px
+    }
+    80% {
+        transform: rotateZ(0deg);
+        left: 0px;
+        top: 0px
+    }
+    90% {
+        transform: rotateZ(0deg);
+        left: 0px;
+        top: -20px
+    }
+    100% {
+        transform: rotateZ(0deg);
+        left: 0px;
+        top: 0px
+    }
+}
+
+#layer1 {
+    width: 180px;
+    height: 10px;
+    background: #F158AA;
+    position: absolute;
+    top: 318px;
+    left: 90px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#layer2 {
+    width: 140px;
+    height: 50px;
+    background: #FECDE3;
+    position: absolute;
+    top: 278px;
+    left: 110px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+#layer3 {
+    width: 100px;
+    height: 40px;
+    background: #FECDE3;
+    position: absolute;
+    top: 238px;
+    left: 130px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    z-index: 1
+}
+
+#cream {
+    position: absolute;
+    height: 70px;
+    width: 600px;
+    background: #8A4036;
+    transform: scale(0.235);
+    left: -211px;
+    top: -67px;
+    border-radius: 30px 30px 0 0;
+}
+
+#cream:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 340px;
+    height: 80px;
+    background-color: #FECDE3;
+    right: -5px;
+    top: 40px;
+}
+
+#cream:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 300px;
+    height: 70px;
+    background-color: #8A4036;
+    left: 0;
+    top: 27px;
+}
+
+#circ1 {
+    width: 15px;
+    height: 15px;
+    background: #E94444;
+    position: absolute;
+    top: 0px;
+    border-radius: 50%;
+    margin-top: 5px;
+    padding: 2px;
+    overflow: hidden;
+    padding:
+}
+
+#circ2 {
+    width: 15px;
+    height: 15px;
+    background: #E94444;
+    position: absolute;
+    top: 0px;
+    border-radius: 50%;
+    margin-top: 5px;
+    padding: 2px;
+    left: 20px;
+    overflow: hidden;
+}
+
+#circ3 {
+    width: 15px;
+    height: 15px;
+    background: #E94444;
+    position: absolute;
+    top: 0px;
+    border-radius: 50%;
+    margin-top: 5px;
+    padding: 2px;
+    left: 40px;
+    overflow: hidden;
+}
+
+#circ4 {
+    width: 15px;
+    height: 15px;
+    background: #E94444;
+    position: absolute;
+    top: 0px;
+    border-radius: 50%;
+    margin-top: 5px;
+    padding: 2px;
+    left: 60px;
+    overflow: hidden;
+}
+
+#circ5 {
+    width: 15px;
+    height: 15px;
+    background: #E94444;
+    position: absolute;
+    top: 0px;
+    border-radius: 50%;
+    margin-top: 5px;
+    padding: 2px;
+    left: 80px;
+    overflow: hidden;
+}
+
+.circ {
+    width: 15px;
+    height: 15px;
+    background: #F47C7C;
+    border-radius: 50%;
+    margin-left: 4px
+}
+
+.candle1 {
+    background-color: #90EE90;
+    height: 70px;
+    width: 20px;
+    position: absolute;
+    top: 179px;
+    left: 165px;
+    transform: scale(0.7)
+}
+
+.flame1 {
+    background-color: #fbb200;
+    height: 22px;
+    width: 22px;
+    border-radius: 0 50% 50% 50%;
+    position: absolute;
+    top: -22px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    box-shadow: 0 0 15px 2px rgb(251, 178, 0, 0.6);
+    animation: glow 2s infinite;
+    -webkit-animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    50% {
+        box-shadow: 0 0 2px 0 rgb(251, 178, 0, 0.6);
+        top: -20.5px;
+    }
+}
+
+#ballon {
+    position: absolute;
+    z-index: -4
+}
+
+#ballon1 {
+    width: 150px;
+    height: 150px;
+    background-image: url(https://image.flaticon.com/icons/svg/194/194366.svg);
+    position: absolute;
+    transform: rotateZ(0deg);
+    left: 17px;
+    top: 174px;
+    animation: ballon1 3s linear 0.1s infinite;
+    transform-origin: bottom;
+}
+
+@keyframes ballon1 {
+    0%,
+    100% {
+        transform: rotateZ(-40deg)
+    }
+    30% {
+        transform: rotateZ(0deg)
+    }
+    60% {
+        transform: rotateZ(-20deg)
+    }
+}
+
+#ballon2 {
+    width: 150px;
+    height: 150px;
+    background-image: url(https://image.flaticon.com/icons/svg/194/194366.svg);
+    position: absolute;
+    transform: rotateZ(20deg);
+    left: 190px;
+    top: 174px;
+    animation: ballon2 3s linear 0.1s infinite;
+    transform-origin: bottom;
+}
+
+@keyframes ballon2 {
+    0%,
+    100% {
+        transform: rotateZ(30deg)
+    }
+    30% {
+        transform: rotateZ(20deg)
+    }
+    60% {
+        transform: rotateZ(40deg)
+    }
+}
+
+
+/*******   BOY    **********************/
+
+#virat {
+    position: absolute;
+    top: 100px;
+    left: 1300px;
+    transform: scale(0.9);
+}
+
+@keyframes virat {
+    to {
+        left: 140px
+    }
+}
+
+#head {
+    width: 73px;
+    height: 80px;
+    border-radius: 39% 61% 51% 49% / 29% 19% 81% 71%;
+    background: #FCC491
+}
+
+#hair {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/42/42055.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -30px;
+    transform: scale(1.1)
+}
+
+.eye {
+    width: 18px;
+    height: 13px;
+    border-radius: 39% 61% 68% 32% / 100% 19% 81% 0%;
+    background: white;
+    border: 2px solid;
+    border-bottom: none;
+    border-right: none;
+    overflow: hidden;
+}
+
+@-webkit-keyframes blink1 {
+    0%,
+    100% {
+        transform: scale(1, .05) rotateZ(-30deg) rotateY(180deg);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1) rotateZ(-30deg) rotateY(180deg);
+    }
+}
+
+#eye1 {
+    position: absolute;
+    top: 30px;
+    transform: rotateZ(-30deg) rotateY(180deg);
+    left: 10px;
+    -webkit-transform-origin: 50%;
+    -webkit-animation: blink1 5s infinite;
+}
+
+#eye2 {
+    position: absolute;
+    top: 30px;
+    transform: rotateZ(30deg);
+    left: 40px;
+    -webkit-transform-origin: 50%;
+    -webkit-animation: blink2 5s infinite;
+}
+
+@-webkit-keyframes blink2 {
+    0%,
+    100% {
+        transform: scale(1, .05) rotateZ(30deg);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1) rotateZ(30deg);
+    }
+}
+
+.iris {
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    margin: 4px;
+    animation: iris 2s linear 0.1s infinite;
+}
+
+@keyframes iris {
+    0%,
+    100% {
+        margin: 2px
+    }
+    40% {
+        margin: 3px
+    }
+}
+
+#mouth {
+    width: 60px;
+    height: 60px;
+    background-image: url(https://image.flaticon.com/icons/svg/146/146345.svg);
+    position: absolute;
+    top: 40px;
+    transform: scale(0.3);
+    left: 5px;
+}
+
+@keyframes mouth {
+    50% {
+        background-image: url(https://image.flaticon.com/icons/svg/327/327279.svg)
+    }
+}
+
+.neck {
+    width: 25px;
+    height: 30px;
+    background: #FCC491;
+    position: absolute;
+    z-index: 0;
+    top: 70px;
+    left: 24px;
+    border-radius: 0 0 50px 50px
+}
+
+.shirt {
+    width: 150px;
+    height: 150px;
+    background-image: url(https://image.flaticon.com/icons/svg/892/892449.svg);
+    margin-left: -39px;
+    z-index: 0l
+}
+
+#button2 {
+    width: 100px;
+    height: 50px;
+    border-radius: 0;
+    border-style: none;
+    background: mediumseagreen;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 420px;
+    left: 120px;
+    z-index: 10;
+    border-radius: 30px;
+}
+
+#cap {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/892/892439.svg);
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    transform: rotateX(30deg);
+}
+
+@keyframes flame {
+    0% {
+        opacity: 1
+    }
+    10% {
+        opacity: 0.8
+    }
+    40% {
+        opacity: 0.6
+    }
+    70% {
+        opacity: 0.4
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+
+/**********   SEction 3 ***********************/
+
+#section3 {
+    width: 350px;
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+    position: absolute;margin:0
+}
+
+.plate {
+    width: 130px;
+    height: 130px;
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 19px;left:40px;
+    border: 5px solid lightgrey;
+}
+
+#item1 {
+    width: 60px;
+    height: 60px;
+    background-image: url(https://image.flaticon.com/icons/svg/135/135625.svg);
+    position: relative;
+    transform: scale();
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item2 {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://image.flaticon.com/icons/svg/1869/1869254.svg);
+    position: relative;
+    transform: scale();
+    background-size: cover;
+    top: 15px;
+    left: 15px
+}
+
+#item3 {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://image.flaticon.com/icons/svg/1868/1868815.svg);
+    position: relative;
+    transform: scale();
+    background-size: cover;
+    top: 10px;
+    left: 15px
+}
+
+#item4 {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://image.flaticon.com/icons/svg/135/135624.svg);
+    position: relative;
+    transform: scale();
+    background-size: cover;
+    top: 10px;
+    left: 12px
+}
+
+#item5 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/135/135664.svg);
+    position: relative;
+    transform: scale();
+    background-size: cover;
+    top: 20px;
+    left: 22px
+}
+
+#item6 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/135/135591.svg);
+    position: relative;
+    transform: scale();
+    background-size: cover;
+    top: 20px;
+    left: 22px
+}
+
+#item7 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/2164/2164108.svg);
+    position: relative;
+    transform: scale();
+    background-size: cover;
+    top: 20px;
+    left: 22px
+}
+
+#item8 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/817/817416.svg);
+    position: relative;
+    transform: scale(0.8);
+    background-size: cover;
+    top: 20px;
+    left: 22px
+}
+
+#item9 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/135/135662.svg);
+    position: relative;
+    transform: scale(1.2);
+    background-size: cover;
+    top: 20px;
+    left: 22px
+}
+
+#item10 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/135/135542.svg);
+    position: relative;
+    transform: scale(0.8);
+    background-size: cover;
+    top: 20px;
+    left: 22px
+}
+
+#item11 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/135/135620.svg);
+    position: relative;
+    transform: scale(0.8);
+    background-size: cover;
+    top: 20px;
+    left: 22px
+}
+
+#item12 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/415/415733.svg);
+    position: relative;
+    transform: scale(0.8);
+    background-size: cover;
+    top: 20px;
+    left: 22px
+}
+
+#item13 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/135/135582.svg);
+    position: relative;
+    transform: scale(1);
+    background-size: cover;
+    top: 20px;
+    left: 22px
+}
+
+#item14 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/1135/1135549.svg);
+    position: relative;
+    transform: scale(0.8);
+    background-size: cover;
+    top: 20px;
+    left: 22px
+}
+
+#item15 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/926/926255.svg);
+    position: relative;
+    transform: scale(1.6);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item16 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/2114/2114718.svg);
+    position: relative;
+    transform: scale(1.2);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item17 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/1205/1205755.svg);
+    position: relative;
+    transform: scale(1.2);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item18 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/135/135588.svg);
+    position: relative;
+    transform: scale(1);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item19 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/1533/1533059.svg);
+    position: relative;
+    transform: scale(1);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item20 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/1868/1868956.svg);
+    position: relative;
+    transform: scale(1.3);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item21 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/817/817399.svg);
+    position: relative;
+    transform: scale(0.6);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item22 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/817/817395.svg);
+    position: relative;
+    transform: scale(0.6);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item23 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/817/817418.svg);
+    position: relative;
+    transform: scale(0.7);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item24 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/275/275747.svg);
+    position: relative;
+    transform: scale(1);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item25 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/541/541732.svg);
+    position: relative;
+    transform: scale(0.7);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item26 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/510/510140.svg);
+    position: relative;
+    transform: scale(0.8);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#item27 {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://image.flaticon.com/icons/svg/135/135618.svg);
+    position: relative;
+    transform: scale(1);
+    background-size: cover;
+    top: 25px;
+    left: 25px
+}
+
+#yourstable {
+    width: 350px;
+    height: 400px;
+    background: #FEC08F;
+    position: absolute;
+    top: 190px;
+    z-index: 0;
+}
+
+#foodtable {
+    width: 4650px;
+    height: 170px;
+    background: #607D8B;
+    margin-top: 0px;
+    position: relative;
+    animation: foodtable 80s linear 0.1s infinite;
+    z-index: 100;
+    left: 0px;
+}
+
+@keyframes foodtable {
+    0% {
+        left: 0px
+    }
+    100% {
+        left: -4000px
+    }
+}
+
+@keyframes item1 {
+    to {
+        top: 205px;
+        left: 0px;
+        position: fixed
+    }
+}
+
+@keyframes item2 {
+    to {
+        top: 205px;
+        left: 70px;
+        position: fixed
+    }
+}
+
+@keyframes item3 {
+    to {
+        top: 205px;
+        left: 150px;
+        position: fixed
+    }
+}
+
+@keyframes item4 {
+    to {
+        top: 205px;
+        left: 250px;
+        position: fixed
+    }
+}
+
+@keyframes item5 {
+    to {
+        top: 270px;
+        left: 0px;
+        position: fixed;
+        transform: rotateZ(10deg)
+    }
+}
+
+@keyframes item6 {
+    to {
+        top: 270px;
+        left: 70px;
+        position: fixed;
+    }
+}
+
+@keyframes item7 {
+    to {
+        top: 270px;
+        left: 150px;
+        position: fixed;
+        transform: rotateZ(-40deg)
+    }
+}
+
+@keyframes item8 {
+    to {
+        top: 270px;
+        left: 205px;
+        position: fixed;
+        transform: rotateZ(20deg)
+    }
+}
+
+@keyframes item10 {
+    to {
+        top: 340px;
+        left: 5px;
+        position: fixed;
+        transform: rotateZ(-10deg);
+        transform: scale(0.9)
+    }
+}
+
+@keyframes item11 {
+    to {
+        top: 340px;
+        left: 70px;
+        position: fixed;
+        transform: rotateZ(-10deg);
+        transform: scale(0.7)
+    }
+}
+
+@keyframes item12 {
+    to {
+        top: 340px;
+        left: 130px;
+        position: fixed;
+        transform: rotateZ(-10deg);
+        transform: scale(0.7)
+    }
+}
+
+@keyframes item13 {
+    to {
+        top: 340px;
+        left: 182px;
+        position: fixed;
+        transform: rotateZ(-10deg);
+        transform: scale(0.8)
+    }
+}
+
+@keyframes item14 {
+    to {
+        top: 340px;
+        left: 220px;
+        position: fixed;
+        transform: rotateZ(90deg) scale(0.8);
+    }
+}
+
+@keyframes item16 {
+    to {
+        top: 340px;
+        left: 265px;
+        position: fixed;
+        transform: rotateZ(0deg) scale(1);
+    }
+}
+
+@keyframes item15 {
+    to {
+        top: 400px;
+        left: 5px;
+        position: fixed;
+        transform: rotateZ(90deg) scale(1);
+    }
+}
+
+@keyframes item17 {
+    to {
+        top: 400px;
+        left: 90px;
+        position: fixed;
+        transform: rotateZ(0deg) scale(1);
+    }
+}
+
+@keyframes item18 {
+    to {
+        top: 400px;
+        left: 180px;
+        position: fixed;
+        transform: rotateZ(0deg) scale(1);
+    }
+}
+
+@keyframes item19 {
+    to {
+        top: 400px;
+        left: 250px;
+        position: fixed;
+        transform: rotateZ(0deg) scale(1);
+    }
+}
+
+@keyframes item20 {
+    to {
+        top: 460px;
+        left: 5px;
+        position: fixed;
+        transform: rotateZ(0deg) scale(1);
+    }
+}
+
+@keyframes item21 {
+    to {
+        top: 460px;
+        left: 60px;
+        position: fixed;
+        transform: rotateZ(0deg) scale(0.6);
+    }
+}
+
+@keyframes item23 {
+    to {
+        top: 460px;
+        left: 100px;
+        position: fixed;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes item24 {
+    to {
+        top: 460px;
+        left: 140px;
+        position: fixed;
+        transform: rotateZ(0deg) scale(0.7);
+    }
+}
+
+@keyframes item27 {
+    to {
+        top: 460px;
+        left: 190px;
+        position: fixed;
+        transform: rotateZ(20deg) scale(0.7);
+    }
+}
+
+@keyframes item9 {
+    to {
+        top: 470px;
+        left: 255px;
+        position: fixed;
+        transform: rotateZ(-90deg)
+    }
+}
+
